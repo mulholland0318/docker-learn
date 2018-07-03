@@ -1,0 +1,8 @@
+docker images;  列出dockers中下载的所有镜像
+docker ps; 查看所有正在运行的容器
+docker ps -a ;查看所有的容器程序包括已经停止运行的容器。
+docker stop containerName ;停止正在运行的容器
+docker rm containerName ;删除已经停止运行的容器（正在运行的容器，先停止运行后再删除）
+docker rm -f containerName; 强制删除正在运行的容器
+docker rm 'docker ps -a -q' ; 删除所有已经停止的容器
+解释： -q 参数只列出容器的id
