@@ -1,0 +1,4 @@
+当在window环境中使用docker mysql镜像创建的运行数据库。  外部环境无法连接数据时，解决方式如下。
+1、通过docker-machine ip 查看IP地址，以及检查端口号是否正确。
+2、进入docker环境中修改mysql的用户权限，允许外部环境连接数据库
+（docker exec it containerName bash)->(grant all privileges on *.* to 'user'@'ip' identified by 'password'
